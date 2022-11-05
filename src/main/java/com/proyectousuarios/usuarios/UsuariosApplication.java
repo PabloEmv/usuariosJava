@@ -17,10 +17,10 @@ public class UsuariosApplication {
 		Alumno alumno2 = new Alumno("pedro", "pedrito@xd.com", "warisapo", 22, 'M', 01);
 		System.out.println(alumno2);
 
-		Administrador admin1 = new Administrador("Faker","faker.t1@gmail.com","essecreto", 26, 'M', 02,"dios");
+		Administrador admin1 = new Administrador("Faker","faker.t1@gmail.com","essecreto", 26, 'M', 02,"dios",true);
 		System.out.println(admin1);
 
-		Administrador admin2 = new Administrador("Nelson","nejobac@gmail.com","elmasrapidodeloeste", 27, 'M', 03,"dios");
+		Administrador admin2 = new Administrador("Nelson","nejobac@gmail.com","elmasrapidodeloeste", 27, 'M', 03,"dios",true);
 		System.out.println(admin2);
 
 		Editor editor1 = new Editor("Mari", "mipzoa@gmail.com", "felicessomos", 28, 'F', 04);

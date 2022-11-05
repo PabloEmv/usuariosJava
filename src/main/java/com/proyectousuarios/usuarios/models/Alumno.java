@@ -1,7 +1,9 @@
 package com.proyectousuarios.usuarios.models;
 
-public class Alumno extends Usuario{
+import java.io.Console;
 
+public class Alumno extends Usuario{
+    Console console = System.console();
     public Alumno() {
         super();
     }
@@ -23,6 +25,19 @@ public class Alumno extends Usuario{
         System.out.println("ver resultados");
     }
 
+    public String nombreAlumno() {
+        String nombreA = console.readLine("nombre");
+        try {
+            if (this.nombre == nombreA) {
+                return "Si es tu nombre";
+            } else {
+                return "No es tu nombre";
+            }
+        } catch (Exception e) {
+            return "aaaaaaaaa";
+        }
+        
+    }
     @Override
     public String toString() {
         return "Alumno " + super.toString();
